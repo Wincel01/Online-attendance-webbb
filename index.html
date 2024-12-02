@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Online Attendance System</h1>
+        </header>
+
+        <div class="form-container">
+            <h2>Create an Account</h2>
+            <form id="signup-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+
+                <label for="role">Choose Role</label>
+                <select id="role" required>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+
+        <div class="attendance-container">
+            <h2>Mark Attendance</h2>
+            <form id="attendance-form">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter Student's Name" required>
+
+                <label for="attendanceStatus">Attendance Status</label>
+                <select id="attendanceStatus" required>
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+
+                <label for="absenceReason">Reason for Absence (if absent)</label>
+                <textarea id="absenceReason" placeholder="Enter reason for absence" required></textarea>
+
+                <button type="submit">Mark Attendance</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
